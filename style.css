@@ -373,8 +373,6 @@ a{
 
         }
         .triangle{
-            width: 0;
-            height: 0;
             border-right: 20px solid var(--white);
             border-top: 20px solid transparent;
             border-left: 20px solid transparent;
