@@ -84,9 +84,18 @@ a{
     }
     .nav__mobile
     {
-        display:none;
-    }
+        height: 0;
+        transition: 0.3s;
+        opacity: 0;
+        background-color: black;
 
+    }
+    .nav__triangle{
+        height: auto;
+        transition:  0.3s;
+        opacity: 0;
+        margin-bottom: -1px;
+    }
 
     .cta__radius{
         padding: 10px 20px;
@@ -330,7 +339,7 @@ a{
             display: inline;
         }
         .nav__links{
-            display:none;
+        display:none;
         }
         .nav__mobile{
             margin: 0 auto;
@@ -340,12 +349,15 @@ a{
             align-items: center;
             text-align: center;
             gap:50px;
-            background-color: var(--white);
-            display:none;
+            background-color: var(--yellow);
+            height: 0;
+    
+        
            
         }
        
         .mobile__links{
+            width:100%;
             list-style: none;
             padding: 0;
             display:flex;
@@ -353,9 +365,8 @@ a{
             gap:20px;
             color: var(--grayish--blue);
             padding:30px 0;
+            background-color: var(--white);
          
-
-
         }
         .mobile__link{
             color:var(--grayish--blue) ;
@@ -365,8 +376,6 @@ a{
             width:100%;
             display: flex;
             justify-content: flex-end;
-            display: none;
-
 
         }
         .triangle{
@@ -411,9 +420,7 @@ a{
             ;
 
         }
-        .hero__article{
 
-        }
         .hero__tittle{
             font-size: 1.5rem;
         }

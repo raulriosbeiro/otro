@@ -4,21 +4,22 @@ const btn__hamburguer = document.getElementById("hambuerguer__link");
 var estado = false;
 
 function toogle_menu(){
-    
+
     if(estado==false){
-        document.getElementById("id__triangle").style.display = 'flex';
-        document.getElementsByClassName("nav__mobile")[0].style.display ='flex';
+        document.getElementById("id__triangle").style.opacity = '1';
+        document.getElementById("nav_mobile").style.opacity ='1';
+        document.getElementById("nav_mobile").style.height ='150px';
+
         estado=true;
     }
     else{
-        document.getElementById("id__triangle").style.transitionDuration ='1s';
-        document.getElementById("id__triangle").style.display = 'none';
-        document.getElementsByClassName("nav__mobile")[0].style.transition ='1s';
-        document.getElementsByClassName("nav__mobile")[0].style.display ='none';
-        
+        document.getElementById("id__triangle").style.opacity = '0';
+        document.getElementById("nav_mobile").style.opacity ='0';
+        document.getElementById("nav_mobile").style.height ='0%';
+
         estado=false;
     }
-    
+
 }
 
 
