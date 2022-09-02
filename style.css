@@ -84,17 +84,16 @@ a{
     }
     .nav__mobile
     {
-        height: 0;
+        
         transition: 0.3s;
         opacity: 0;
-        background-color: black;
 
     }
+   
     .nav__triangle{
-        height: auto;
         transition:  0.3s;
         opacity: 0;
-        margin-bottom: -1px;
+   
     }
 
     .cta__radius{
@@ -339,7 +338,7 @@ a{
             display: inline;
         }
         .nav__links{
-        display:none;
+            display:none;
         }
         .nav__mobile{
             margin: 0 auto;
@@ -349,10 +348,6 @@ a{
             align-items: center;
             text-align: center;
             gap:50px;
-            background-color: var(--yellow);
-            height: 0;
-    
-        
            
         }
        
@@ -370,10 +365,9 @@ a{
         }
         .mobile__link{
             color:var(--grayish--blue) ;
-      
         }
         .nav__triangle{
-            width:100%;
+        
             display: flex;
             justify-content: flex-end;
 
