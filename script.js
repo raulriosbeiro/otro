@@ -24,7 +24,8 @@ document.getElementById('cardNumber').addEventListener("keyup",function (event){
     let cardNumber = document.getElementById('cardNumber'); 
     let noSpaceNum = cardNumber.value.replace(/\s+/g, '');
     document.getElementById("cardFrontNum").textContent =  cardNumber.value;
-    if(event.key!=="Backspace"){
+  
+    if(event.keycode!=8 || event.keycode!=46 || event.key==="Backspace"){
         if(cardNumber.value.length == 4 || cardNumber.value.length == 9 ||  cardNumber.value.length == 14 ){
             cardNumber.value = cardNumber.value + " " ;
         }
